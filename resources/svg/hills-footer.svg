@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="144px" viewBox="0 0 320 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>7BE75DD9-B389-4737-AEA8-353A8D32746A</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="MOBILE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-main" transform="translate(0.000000, -3442.000000)" fill="#3EA967" fill-rule="nonzero">
+            <g id="Footer" transform="translate(0.000000, 3363.000000)">
+                <path d="M124.585625,118.829658 C143.619063,126.771568 154.624063,129.782996 176.514063,127.886517 C189.225,126.785905 206.469375,120.148989 219.36875,122.552152 C239.220313,126.249937 241.023125,140.439523 250.762812,154.057451 C262.175313,170.016922 267.094063,173.918784 290.987188,176.869508 C301.054062,178.112881 311.155312,180.033765 320,182.826779 L320,223 L0,223 L0,81.8289304 C47.646875,69.0477482 86.1590625,102.798501 124.585625,118.829658 Z" id="hills-footer"></path>
+            </g>
+        </g>
+    </g>
+</svg>

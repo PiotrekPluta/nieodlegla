@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="70px" viewBox="0 0 54 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>389D1C96-32C1-42DE-85F6-0D15C4E744BA</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-42.2%" y="-28.1%" width="215.6%" height="177.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="5" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="MOBILE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Challenge" transform="translate(-138.000000, -791.000000)" fill="#FFC92D" stroke="#FFFFFF" stroke-width="2">
+            <g id="map" transform="translate(0.000000, 655.000000)">
+                <g id="pin" filter="url(#filter-1)" transform="translate(144.000000, 142.000000)">
+                    <circle id="pin-2" cx="16" cy="16" r="16"></circle>
+                    <circle id="pin-1" cx="16" cy="44" r="4"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

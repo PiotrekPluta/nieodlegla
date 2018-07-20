@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>0E750DAF-0596-42E2-94B9-360ED2184522</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="MOBILE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Mobile-main" transform="translate(-19.000000, -26.000000)" stroke="#2F4858">
+            <g id="Intro" transform="translate(-71.000000, 0.000000)">
+                <g id="mobile/hamburger" transform="translate(87.000000, 20.000000)">
+                    <g id="hamburger" transform="translate(4.000000, 6.000000)">
+                        <path d="M0,1 L16,1" id="Line" stroke-width="2"></path>
+                        <path d="M0,6 L16,6" id="Line-Copy" stroke-width="2"></path>
+                        <path d="M0,11 L16,11" id="Line-Copy-2" stroke-width="2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
