@@ -1,11 +1,11 @@
 {
   "feat1": {
-    "title": "",
+    "title": "Zdobądź \“Dach Mazowsza\”",
     "contestants": 0,
-    "location": "",
-    "lat": "",
-    "lng": "",
-    "description": ""
+    "location": "51.1749981, 20.749157",
+    "lat": 51.1749981,
+    "lng": 20.749157,
+    "description": "Wydaje ci się, że Mazowsze jest płaskie? To się mylisz. Góra Altana ma zatrważającą wysokość 408 m.n.p.m i czeka na grupę śmiałków, którzy wspólnie, w zespole międzypokoleniowym zdobędą jej szczyt i przybiją piątkę strażakowi dyżurującemu tam na wieży przeciwpożarowej."
   },
   "feat2": {
     "title": "",
