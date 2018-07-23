@@ -1,0 +1,42 @@
+{
+  "feat1": {
+    "title": "",
+    "contestants": 0,
+    "location": "",
+    "lat": "",
+    "lng": "",
+    "description": ""
+  },
+  "feat2": {
+    "title": "",
+    "contestants": 0,
+    "location": "",
+    "lat": 0,
+    "lng": 0,
+    "description": ""
+  },
+  "feat3": {
+    "title": "",
+    "contestants": 0,
+    "location": "",
+    "lat": 0,
+    "lng": 0,
+    "description": ""
+  },
+  "feat4": {
+    "title": "",
+    "contestants": 0,
+    "location": "",
+    "lat": 0,
+    "lng": 0,
+    "description": ""
+  },
+  "feat5": {
+    "title": "",
+    "contestants": 0,
+    "location": "",
+    "lat": 0,
+    "lng": 0,
+    "description": ""
+  }
+}
