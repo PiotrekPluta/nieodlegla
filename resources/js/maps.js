@@ -179,7 +179,11 @@
                 var map_wyczyn95 = new google.maps.Map(document.getElementById('map_wyczyn95'), optionsFeatPopup);
                 var map_wyczyn96 = new google.maps.Map(document.getElementById('map_wyczyn96'), optionsFeatPopup);
                 var map_wyczyn97 = new google.maps.Map(document.getElementById('map_wyczyn97'), optionsFeatPopup);
-
+                var map_wyczyn98 = new google.maps.Map(document.getElementById('map_wyczyn98'), optionsFeatPopup);
+                var map_wyczyn99 = new google.maps.Map(document.getElementById('map_wyczyn99'), optionsFeatPopup);
+                var map_wyczyn100 = new google.maps.Map(document.getElementById('map_wyczyn100'), optionsFeatPopup);
+                var map_wyczyn101 = new google.maps.Map(document.getElementById('map_wyczyn101'), optionsFeatPopup);
+                
                 
 //Adding markers to main page - each marker has function to call out the pop-up
                 
@@ -1469,6 +1473,58 @@
                 function addMarker_w97(props) {var marker = new google.maps.Marker({ position:props.coords, map:map_wyczyn97, }); if(props.iconImage){marker.setIcon(props.iconImage);}};
                 
                 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                //Markers for WYCZYN_98
+                //marker for main page
+                addMarker_w98_main({coords:{lat:49.441667, lng:21.222222}, iconImage:'http://nieodlegla.pl/files/marker.svg', });
+                function addMarker_w98_main(props) {var marker = new google.maps.Marker({ position:props.coords, map:map, }); if(props.iconImage){marker.setIcon(props.iconImage);}
+                                                  google.maps.event.addListener(marker, "click", function() { document.querySelector('.bg-modal').style.display = 'block';         document.querySelector('#wyczyn98_content').style.display = 'block'; document.querySelector('#wyczyn98_content').style.position = 'fixed';});
+                                                  };
+                //Marker for pop-up
+                addMarker_w98({coords:{lat:49.441667, lng:21.222222}, iconImage:'http://nieodlegla.pl/files/pin.svg', });
+                function addMarker_w98(props) {var marker = new google.maps.Marker({ position:props.coords, map:map_wyczyn98, }); if(props.iconImage){marker.setIcon(props.iconImage);}};
+                
+                //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                //Markers for WYCZYN_99
+                //marker for main page
+                addMarker_w99_main({coords:{lat:50.8356258, lng:15.5567355}, iconImage:'http://nieodlegla.pl/files/marker.svg', });
+                function addMarker_w99_main(props) {var marker = new google.maps.Marker({ position:props.coords, map:map, }); if(props.iconImage){marker.setIcon(props.iconImage);}
+                                                  google.maps.event.addListener(marker, "click", function() { document.querySelector('.bg-modal').style.display = 'block';         document.querySelector('#wyczyn99_content').style.display = 'block'; document.querySelector('#wyczyn99_content').style.position = 'fixed';});
+                                                  };
+                //Marker for pop-up
+                addMarker_w99({coords:{lat:50.8356258, lng:15.5567355}, iconImage:'http://nieodlegla.pl/files/pin.svg', });
+                function addMarker_w99(props) {var marker = new google.maps.Marker({ position:props.coords, map:map_wyczyn99, }); if(props.iconImage){marker.setIcon(props.iconImage);}};
+                
+                //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                //Markers for WYCZYN_100
+                //marker for main page
+                addMarker_w100_main({coords:{lat:49.4806, lng:20.0325}, iconImage:'http://nieodlegla.pl/files/marker.svg', });
+                function addMarker_w100_main(props) {var marker = new google.maps.Marker({ position:props.coords, map:map, }); if(props.iconImage){marker.setIcon(props.iconImage);}
+                                                  google.maps.event.addListener(marker, "click", function() { document.querySelector('.bg-modal').style.display = 'block';         document.querySelector('#wyczyn100_content').style.display = 'block'; document.querySelector('#wyczyn100_content').style.position = 'fixed';});
+                                                  };
+                //Marker for pop-up
+                addMarker_w100({coords:{lat:49.4806, lng:20.0325}, iconImage:'http://nieodlegla.pl/files/pin.svg', });
+                function addMarker_w100(props) {var marker = new google.maps.Marker({ position:props.coords, map:map_wyczyn100, }); if(props.iconImage){marker.setIcon(props.iconImage);}};
+                
+                //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                //Markers for WYCZYN_101
+                //marker for main page
+                addMarker_w101_main({coords:{lat:51.541, lng:20.1362}, iconImage:'http://nieodlegla.pl/files/marker.svg', });
+                function addMarker_w101_main(props) {var marker = new google.maps.Marker({ position:props.coords, map:map, }); if(props.iconImage){marker.setIcon(props.iconImage);}
+                                                  google.maps.event.addListener(marker, "click", function() { document.querySelector('.bg-modal').style.display = 'block';         document.querySelector('#wyczyn101_content').style.display = 'block'; document.querySelector('#wyczyn101_content').style.position = 'fixed';});
+                                                  };
+                //Marker for pop-up
+                addMarker_w101({coords:{lat:51.541, lng:20.1362}, iconImage:'http://nieodlegla.pl/files/pin.svg', });
+                function addMarker_w101(props) {var marker = new google.maps.Marker({ position:props.coords, map:map_wyczyn101, }); if(props.iconImage){marker.setIcon(props.iconImage);}};
+                
+                //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 

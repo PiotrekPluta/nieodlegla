@@ -1038,6 +1038,46 @@ $(document).ready(function () {
         document.querySelector('.bg-modal').style.display = 'none';
         document.querySelector('#wyczyn97_content').style.display = 'none';
     });
+    $('#wyczyn98').click(function() {
+        document.querySelector('.bg-modal').style.display = 'block';
+        document.querySelector('#wyczyn98_content').style.display = 'block';
+        document.querySelector('#wyczyn98_content').style.position = 'fixed';
+    });
+    /*Closing the pop-up with feat-description*/
+        $('.popup-close-arrow').click(function() {
+        document.querySelector('.bg-modal').style.display = 'none';
+        document.querySelector('#wyczyn98_content').style.display = 'none';
+    });
+    $('#wyczyn99').click(function() {
+        document.querySelector('.bg-modal').style.display = 'block';
+        document.querySelector('#wyczyn99_content').style.display = 'block';
+        document.querySelector('#wyczyn99_content').style.position = 'fixed';
+    });
+    /*Closing the pop-up with feat-description*/
+        $('.popup-close-arrow').click(function() {
+        document.querySelector('.bg-modal').style.display = 'none';
+        document.querySelector('#wyczyn99_content').style.display = 'none';
+    });
+    $('#wyczyn100').click(function() {
+        document.querySelector('.bg-modal').style.display = 'block';
+        document.querySelector('#wyczyn100_content').style.display = 'block';
+        document.querySelector('#wyczyn100_content').style.position = 'fixed';
+    });
+    /*Closing the pop-up with feat-description*/
+        $('.popup-close-arrow').click(function() {
+        document.querySelector('.bg-modal').style.display = 'none';
+        document.querySelector('#wyczyn100_content').style.display = 'none';
+    });
+    $('#wyczyn101').click(function() {
+        document.querySelector('.bg-modal').style.display = 'block';
+        document.querySelector('#wyczyn101_content').style.display = 'block';
+        document.querySelector('#wyczyn101_content').style.position = 'fixed';
+    });
+    /*Closing the pop-up with feat-description*/
+        $('.popup-close-arrow').click(function() {
+        document.querySelector('.bg-modal').style.display = 'none';
+        document.querySelector('#wyczyn101_content').style.display = 'none';
+    });
 
 
     
