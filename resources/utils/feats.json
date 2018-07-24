@@ -1,5 +1,6 @@
 {
   "feat1": {
+    "displayName": "#wyczyn1",
     "title": "Zdobądź \"Dach Mazowsza\"",
     "contestants": 0,
     "location": "51.1749981, 20.749157",
@@ -8,6 +9,7 @@
     "description": "Wydaje ci się, że Mazowsze jest płaskie? To się mylisz. Góra Altana ma zatrważającą wysokość 408 m.n.p.m i czeka na grupę śmiałków, którzy wspólnie, w zespole międzypokoleniowym zdobędą jej szczyt i przybiją piątkę strażakowi dyżurującemu tam na wieży przeciwpożarowej."
   },
   "feat2": {
+    "displayName": "#wyczyn2",
     "title": "",
     "contestants": 0,
     "location": "",
@@ -16,6 +18,7 @@
     "description": ""
   },
   "feat3": {
+    "displayName": "#wyczyn3",
     "title": "",
     "contestants": 0,
     "location": "",
@@ -24,6 +27,7 @@
     "description": ""
   },
   "feat4": {
+    "displayName": "#wyczyn4",
     "title": "",
     "contestants": 0,
     "location": "",
@@ -32,6 +36,7 @@
     "description": ""
   },
   "feat5": {
+    "displayName": "#wyczyn5",
     "title": "",
     "contestants": 0,
     "location": "",
