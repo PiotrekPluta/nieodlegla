@@ -1,88 +1,65 @@
 function initMap() {
   //map options
 
-  var options = {};
+  let options = {};
+  const mapStyles = [
+    {"featureType": "poi.park", "stylers": [{"color": "#3ea967"}]},
+    {"featureType": "water", "stylers": [{"color": "#d4ecff"}]}
+  ];
 
   if ($('.feat-content').css('display') === 'block') {
     //Add your javascript for large screens here
     options = {
       center: {lat: 53.827132, lng: 18.6794054},
       zoom: 7,
-      disableDefaultUI: true, //it turns off all of the control in the map such as zoom, street view and so on
-      //set the style of the
-      styles:
-          [{"featureType": "poi.park", "stylers": [{"color": "#3ea967"}]},
-            {"featureType": "water", "stylers": [{"color": "#d4ecff"}]}]
+      disableDefaultUI: true,
+      styles: mapStyles
     }
   }
 
-  else if ($(window).width() > 769 && $('.feat-content').css('display')
-      === 'none') {
+  else if ($(window).width() > 769 && $('.feat-content').css('display') === 'none') {
     //Add your javascript for large screens here
     options = {
       center: {lat: 53.827132, lng: 18.6794054},
       zoom: 7,
-      disableDefaultUI: true, //it turns off all of the control in the map such as zoom, street view and so on
-      //set the style of the
-      styles:
-          [{"featureType": "poi.park", "stylers": [{"color": "#3ea967"}]},
-            {"featureType": "water", "stylers": [{"color": "#d4ecff"}]}]
+      disableDefaultUI: true,
+      styles: mapStyles
     }
   }
-  else if ($(window).width() > 480 && $('.feat-content').css('display')
-      === 'none') {
+
+  else if ($(window).width() > 480 && $('.feat-content').css('display') === 'none') {
     options = {
       center: {lat: 52.0646186, lng: 19.3225117},
       zoom: 5.8,
-      disableDefaultUI: true, //it turns off all of the control in the map such as zoom, street view and so on
-      //set the style of the
-      styles:
-          [{"featureType": "poi.park", "stylers": [{"color": "#3ea967"}]},
-            {"featureType": "water", "stylers": [{"color": "#d4ecff"}]}]
+      disableDefaultUI: true,
+      styles: mapStyles
     }
-
-    //end of map styling
-
   }
-  else if ($(window).width() > 200 && $('.feat-content').css('display')
-      === 'none') {
+
+  else if ($(window).width() > 200 && $('.feat-content').css('display') === 'none') {
     options = {
       center: {lat: 52.09, lng: 19.3225117},
       zoom: 5.6,
-      disableDefaultUI: true, //it turns off all of the control in the map such as zoom, street view and so on
-      //set the style of the
-      styles:
-
-          [{"featureType": "poi.park", "stylers": [{"color": "#3ea967"}]},
-            {"featureType": "water", "stylers": [{"color": "#d4ecff"}]}]
+      disableDefaultUI: true,
+      styles: mapStyles
     }
-
-    //end of map styling
   }
+
   else if ($('.feat-content').css('display') === 'block') {
     options = {
       center: {lat: 52.09, lng: 19.3225117},
       zoom: 5.6,
-      disableDefaultUI: true, //it turns off all of the control in the map such as zoom, street view and so on
-      //set the style of the
-      styles:
-
-          [{"featureType": "poi.park", "stylers": [{"color": "#3ea967"}]},
-            {"featureType": "water", "stylers": [{"color": "#d4ecff"}]}]
+      disableDefaultUI: true,
+      styles: mapStyles
     }
-
-    //end of map styling
   }
 
   //map options for feat-description pop-ups
   var optionsFeatPopup = {
     center: {lat: 52.09, lng: 19.3225117},
     zoom: 5.6,
-    disableDefaultUI: true, //it turns off all of the control in the map such as zoom, street view and so on
-    //set the style of the
-    styles:
-        [{"featureType": "poi.park", "stylers": [{"color": "#3ea967"}]},
-          {"featureType": "water", "stylers": [{"color": "#d4ecff"}]}]
+    disableDefaultUI: true,
+    styles: mapStyles
   };
 
   //map for a main page
@@ -90,202 +67,129 @@ function initMap() {
   //map for 1st feat from main page
 
   //add maps for pop-ups (all popups have to be in index so they can be call out on marker click)
-  var map_wyczyn1 = new google.maps.Map(document.getElementById('map_wyczyn1'),
-      optionsFeatPopup);
-  var map_wyczyn2 = new google.maps.Map(document.getElementById('map_wyczyn2'),
-      optionsFeatPopup);
-  var map_wyczyn3 = new google.maps.Map(document.getElementById('map_wyczyn3'),
-      optionsFeatPopup);
-  var map_wyczyn4 = new google.maps.Map(document.getElementById('map_wyczyn4'),
-      optionsFeatPopup);
-  var map_wyczyn5 = new google.maps.Map(document.getElementById('map_wyczyn5'),
-      optionsFeatPopup);
-  var map_wyczyn6 = new google.maps.Map(document.getElementById('map_wyczyn6'),
-      optionsFeatPopup);
-  var map_wyczyn7 = new google.maps.Map(document.getElementById('map_wyczyn7'),
-      optionsFeatPopup);
-  var map_wyczyn8 = new google.maps.Map(document.getElementById('map_wyczyn8'),
-      optionsFeatPopup);
-  var map_wyczyn9 = new google.maps.Map(document.getElementById('map_wyczyn9'),
-      optionsFeatPopup);
-  var map_wyczyn10 = new google.maps.Map(
-      document.getElementById('map_wyczyn10'), optionsFeatPopup);
-  var map_wyczyn11 = new google.maps.Map(
-      document.getElementById('map_wyczyn11'), optionsFeatPopup);
-  var map_wyczyn12 = new google.maps.Map(
-      document.getElementById('map_wyczyn12'), optionsFeatPopup);
-  var map_wyczyn13 = new google.maps.Map(
-      document.getElementById('map_wyczyn13'), optionsFeatPopup);
-  var map_wyczyn14 = new google.maps.Map(
-      document.getElementById('map_wyczyn14'), optionsFeatPopup);
-  var map_wyczyn15 = new google.maps.Map(
-      document.getElementById('map_wyczyn15'), optionsFeatPopup);
-  var map_wyczyn16 = new google.maps.Map(
-      document.getElementById('map_wyczyn16'), optionsFeatPopup);
-  var map_wyczyn17 = new google.maps.Map(
-      document.getElementById('map_wyczyn17'), optionsFeatPopup);
-  var map_wyczyn18 = new google.maps.Map(
-      document.getElementById('map_wyczyn18'), optionsFeatPopup);
-  var map_wyczyn19 = new google.maps.Map(
-      document.getElementById('map_wyczyn19'), optionsFeatPopup);
-  var map_wyczyn20 = new google.maps.Map(
-      document.getElementById('map_wyczyn20'), optionsFeatPopup);
-  var map_wyczyn21 = new google.maps.Map(
-      document.getElementById('map_wyczyn21'), optionsFeatPopup);
-  var map_wyczyn22 = new google.maps.Map(
-      document.getElementById('map_wyczyn22'), optionsFeatPopup);
-  var map_wyczyn23 = new google.maps.Map(
-      document.getElementById('map_wyczyn23'), optionsFeatPopup);
-  var map_wyczyn24 = new google.maps.Map(
-      document.getElementById('map_wyczyn24'), optionsFeatPopup);
-  var map_wyczyn25 = new google.maps.Map(
-      document.getElementById('map_wyczyn25'), optionsFeatPopup);
-  var map_wyczyn26 = new google.maps.Map(
-      document.getElementById('map_wyczyn26'), optionsFeatPopup);
-  var map_wyczyn27 = new google.maps.Map(
-      document.getElementById('map_wyczyn27'), optionsFeatPopup);
-  var map_wyczyn28 = new google.maps.Map(
-      document.getElementById('map_wyczyn28'), optionsFeatPopup);
-  var map_wyczyn29 = new google.maps.Map(
-      document.getElementById('map_wyczyn29'), optionsFeatPopup);
-  var map_wyczyn30 = new google.maps.Map(
-      document.getElementById('map_wyczyn30'), optionsFeatPopup);
-  var map_wyczyn31 = new google.maps.Map(
-      document.getElementById('map_wyczyn31'), optionsFeatPopup);
-  var map_wyczyn32 = new google.maps.Map(
-      document.getElementById('map_wyczyn32'), optionsFeatPopup);
-  var map_wyczyn33 = new google.maps.Map(
-      document.getElementById('map_wyczyn33'), optionsFeatPopup);
-  var map_wyczyn34 = new google.maps.Map(
-      document.getElementById('map_wyczyn34'), optionsFeatPopup);
-  var map_wyczyn35 = new google.maps.Map(
-      document.getElementById('map_wyczyn35'), optionsFeatPopup);
-  var map_wyczyn36 = new google.maps.Map(
-      document.getElementById('map_wyczyn36'), optionsFeatPopup);
-  var map_wyczyn37 = new google.maps.Map(
-      document.getElementById('map_wyczyn37'), optionsFeatPopup);
-  var map_wyczyn38 = new google.maps.Map(
-      document.getElementById('map_wyczyn38'), optionsFeatPopup);
-  var map_wyczyn39 = new google.maps.Map(
-      document.getElementById('map_wyczyn39'), optionsFeatPopup);
-  var map_wyczyn40 = new google.maps.Map(
-      document.getElementById('map_wyczyn40'), optionsFeatPopup);
-  var map_wyczyn41 = new google.maps.Map(
-      document.getElementById('map_wyczyn41'), optionsFeatPopup);
-  var map_wyczyn42 = new google.maps.Map(
-      document.getElementById('map_wyczyn42'), optionsFeatPopup);
-  var map_wyczyn43 = new google.maps.Map(
-      document.getElementById('map_wyczyn43'), optionsFeatPopup);
-  var map_wyczyn44 = new google.maps.Map(
-      document.getElementById('map_wyczyn44'), optionsFeatPopup);
-  var map_wyczyn45 = new google.maps.Map(
-      document.getElementById('map_wyczyn45'), optionsFeatPopup);
-  var map_wyczyn46 = new google.maps.Map(
-      document.getElementById('map_wyczyn46'), optionsFeatPopup);
-  var map_wyczyn47 = new google.maps.Map(
-      document.getElementById('map_wyczyn47'), optionsFeatPopup);
-  var map_wyczyn48 = new google.maps.Map(
-      document.getElementById('map_wyczyn48'), optionsFeatPopup);
-  var map_wyczyn49 = new google.maps.Map(
-      document.getElementById('map_wyczyn49'), optionsFeatPopup);
-  var map_wyczyn50 = new google.maps.Map(
-      document.getElementById('map_wyczyn50'), optionsFeatPopup);
-  var map_wyczyn51 = new google.maps.Map(
-      document.getElementById('map_wyczyn51'), optionsFeatPopup);
-  var map_wyczyn52 = new google.maps.Map(
-      document.getElementById('map_wyczyn52'), optionsFeatPopup);
-  var map_wyczyn53 = new google.maps.Map(
-      document.getElementById('map_wyczyn53'), optionsFeatPopup);
-  var map_wyczyn54 = new google.maps.Map(
-      document.getElementById('map_wyczyn54'), optionsFeatPopup);
-  var map_wyczyn55 = new google.maps.Map(
-      document.getElementById('map_wyczyn55'), optionsFeatPopup);
-  var map_wyczyn56 = new google.maps.Map(
-      document.getElementById('map_wyczyn56'), optionsFeatPopup);
-  var map_wyczyn57 = new google.maps.Map(
-      document.getElementById('map_wyczyn57'), optionsFeatPopup);
-  var map_wyczyn58 = new google.maps.Map(
-      document.getElementById('map_wyczyn58'), optionsFeatPopup);
-  var map_wyczyn59 = new google.maps.Map(
-      document.getElementById('map_wyczyn59'), optionsFeatPopup);
-  var map_wyczyn60 = new google.maps.Map(
-      document.getElementById('map_wyczyn60'), optionsFeatPopup);
-  var map_wyczyn61 = new google.maps.Map(
-      document.getElementById('map_wyczyn61'), optionsFeatPopup);
-  var map_wyczyn62 = new google.maps.Map(
-      document.getElementById('map_wyczyn62'), optionsFeatPopup);
-  var map_wyczyn63 = new google.maps.Map(
-      document.getElementById('map_wyczyn63'), optionsFeatPopup);
-  var map_wyczyn64 = new google.maps.Map(
-      document.getElementById('map_wyczyn64'), optionsFeatPopup);
-  var map_wyczyn65 = new google.maps.Map(
-      document.getElementById('map_wyczyn65'), optionsFeatPopup);
-  var map_wyczyn66 = new google.maps.Map(
-      document.getElementById('map_wyczyn66'), optionsFeatPopup);
-  var map_wyczyn67 = new google.maps.Map(
-      document.getElementById('map_wyczyn67'), optionsFeatPopup);
-  var map_wyczyn68 = new google.maps.Map(
-      document.getElementById('map_wyczyn68'), optionsFeatPopup);
-  var map_wyczyn69 = new google.maps.Map(
-      document.getElementById('map_wyczyn69'), optionsFeatPopup);
-  var map_wyczyn70 = new google.maps.Map(
-      document.getElementById('map_wyczyn70'), optionsFeatPopup);
-  var map_wyczyn71 = new google.maps.Map(
-      document.getElementById('map_wyczyn71'), optionsFeatPopup);
-  var map_wyczyn72 = new google.maps.Map(
-      document.getElementById('map_wyczyn72'), optionsFeatPopup);
-  var map_wyczyn73 = new google.maps.Map(
-      document.getElementById('map_wyczyn73'), optionsFeatPopup);
-  var map_wyczyn74 = new google.maps.Map(
-      document.getElementById('map_wyczyn74'), optionsFeatPopup);
-  var map_wyczyn75 = new google.maps.Map(
-      document.getElementById('map_wyczyn75'), optionsFeatPopup);
-  var map_wyczyn76 = new google.maps.Map(
-      document.getElementById('map_wyczyn76'), optionsFeatPopup);
-  var map_wyczyn77 = new google.maps.Map(
-      document.getElementById('map_wyczyn77'), optionsFeatPopup);
-  var map_wyczyn78 = new google.maps.Map(
-      document.getElementById('map_wyczyn78'), optionsFeatPopup);
-  var map_wyczyn79 = new google.maps.Map(
-      document.getElementById('map_wyczyn79'), optionsFeatPopup);
-  var map_wyczyn80 = new google.maps.Map(
-      document.getElementById('map_wyczyn80'), optionsFeatPopup);
-  var map_wyczyn81 = new google.maps.Map(
-      document.getElementById('map_wyczyn81'), optionsFeatPopup);
-  var map_wyczyn82 = new google.maps.Map(
-      document.getElementById('map_wyczyn82'), optionsFeatPopup);
-  var map_wyczyn83 = new google.maps.Map(
-      document.getElementById('map_wyczyn83'), optionsFeatPopup);
-  var map_wyczyn84 = new google.maps.Map(
-      document.getElementById('map_wyczyn84'), optionsFeatPopup);
-  var map_wyczyn85 = new google.maps.Map(
-      document.getElementById('map_wyczyn85'), optionsFeatPopup);
-  var map_wyczyn86 = new google.maps.Map(
-      document.getElementById('map_wyczyn86'), optionsFeatPopup);
-  var map_wyczyn87 = new google.maps.Map(
-      document.getElementById('map_wyczyn87'), optionsFeatPopup);
-  var map_wyczyn88 = new google.maps.Map(
-      document.getElementById('map_wyczyn88'), optionsFeatPopup);
-  var map_wyczyn89 = new google.maps.Map(
-      document.getElementById('map_wyczyn89'), optionsFeatPopup);
-  var map_wyczyn90 = new google.maps.Map(
-      document.getElementById('map_wyczyn90'), optionsFeatPopup);
-  var map_wyczyn91 = new google.maps.Map(
-      document.getElementById('map_wyczyn91'), optionsFeatPopup);
-  var map_wyczyn92 = new google.maps.Map(
-      document.getElementById('map_wyczyn92'), optionsFeatPopup);
-  var map_wyczyn93 = new google.maps.Map(
-      document.getElementById('map_wyczyn93'), optionsFeatPopup);
-  var map_wyczyn94 = new google.maps.Map(
-      document.getElementById('map_wyczyn94'), optionsFeatPopup);
-  var map_wyczyn95 = new google.maps.Map(
-      document.getElementById('map_wyczyn95'), optionsFeatPopup);
-  var map_wyczyn96 = new google.maps.Map(
-      document.getElementById('map_wyczyn96'), optionsFeatPopup);
-  var map_wyczyn97 = new google.maps.Map(
-      document.getElementById('map_wyczyn97'), optionsFeatPopup);
+  // var mapWyczyn = new google.maps.Map(document.getElementById(''), optionsFeatPopup);
 
-  //Adding markers to main page - each marker has function to call out the pop-up
+  var map_wyczyn1 = new google.maps.Map(document.getElementById('map_wyczyn1'), optionsFeatPopup);
+  var map_wyczyn2 = new google.maps.Map(document.getElementById('map_wyczyn2'), optionsFeatPopup);
+  var map_wyczyn3 = new google.maps.Map(document.getElementById('map_wyczyn3'), optionsFeatPopup);
+  var map_wyczyn4 = new google.maps.Map(document.getElementById('map_wyczyn4'), optionsFeatPopup);
+  var map_wyczyn5 = new google.maps.Map(document.getElementById('map_wyczyn5'), optionsFeatPopup);
+  var map_wyczyn6 = new google.maps.Map(document.getElementById('map_wyczyn6'), optionsFeatPopup);
+  var map_wyczyn7 = new google.maps.Map(document.getElementById('map_wyczyn7'), optionsFeatPopup);
+  var map_wyczyn8 = new google.maps.Map(document.getElementById('map_wyczyn8'), optionsFeatPopup);
+  var map_wyczyn9 = new google.maps.Map(document.getElementById('map_wyczyn9'), optionsFeatPopup);
+  var map_wyczyn10 = new google.maps.Map(document.getElementById('map_wyczyn10'), optionsFeatPopup);
+  var map_wyczyn11 = new google.maps.Map(document.getElementById('map_wyczyn11'), optionsFeatPopup);
+  var map_wyczyn12 = new google.maps.Map(document.getElementById('map_wyczyn12'), optionsFeatPopup);
+  var map_wyczyn13 = new google.maps.Map(document.getElementById('map_wyczyn13'), optionsFeatPopup);
+  var map_wyczyn14 = new google.maps.Map(document.getElementById('map_wyczyn14'), optionsFeatPopup);
+  var map_wyczyn15 = new google.maps.Map(document.getElementById('map_wyczyn15'), optionsFeatPopup);
+  var map_wyczyn16 = new google.maps.Map(document.getElementById('map_wyczyn16'), optionsFeatPopup);
+  var map_wyczyn17 = new google.maps.Map(document.getElementById('map_wyczyn17'), optionsFeatPopup);
+  var map_wyczyn18 = new google.maps.Map(document.getElementById('map_wyczyn18'), optionsFeatPopup);
+  var map_wyczyn19 = new google.maps.Map(document.getElementById('map_wyczyn19'), optionsFeatPopup);
+  var map_wyczyn20 = new google.maps.Map(document.getElementById('map_wyczyn20'), optionsFeatPopup);
+  var map_wyczyn21 = new google.maps.Map(document.getElementById('map_wyczyn21'), optionsFeatPopup);
+  var map_wyczyn22 = new google.maps.Map(document.getElementById('map_wyczyn22'), optionsFeatPopup);
+  var map_wyczyn23 = new google.maps.Map(document.getElementById('map_wyczyn23'), optionsFeatPopup);
+  var map_wyczyn24 = new google.maps.Map(document.getElementById('map_wyczyn24'), optionsFeatPopup);
+  var map_wyczyn25 = new google.maps.Map(document.getElementById('map_wyczyn25'), optionsFeatPopup);
+  var map_wyczyn26 = new google.maps.Map(document.getElementById('map_wyczyn26'), optionsFeatPopup);
+  var map_wyczyn27 = new google.maps.Map(document.getElementById('map_wyczyn27'), optionsFeatPopup);
+  var map_wyczyn28 = new google.maps.Map(document.getElementById('map_wyczyn28'), optionsFeatPopup);
+  var map_wyczyn29 = new google.maps.Map(document.getElementById('map_wyczyn29'), optionsFeatPopup);
+  var map_wyczyn30 = new google.maps.Map(document.getElementById('map_wyczyn30'), optionsFeatPopup);
+  var map_wyczyn31 = new google.maps.Map(document.getElementById('map_wyczyn31'), optionsFeatPopup);
+  var map_wyczyn32 = new google.maps.Map(document.getElementById('map_wyczyn32'), optionsFeatPopup);
+  var map_wyczyn33 = new google.maps.Map(document.getElementById('map_wyczyn33'), optionsFeatPopup);
+  var map_wyczyn34 = new google.maps.Map(document.getElementById('map_wyczyn34'), optionsFeatPopup);
+  var map_wyczyn35 = new google.maps.Map(document.getElementById('map_wyczyn35'), optionsFeatPopup);
+  var map_wyczyn36 = new google.maps.Map(document.getElementById('map_wyczyn36'), optionsFeatPopup);
+  var map_wyczyn37 = new google.maps.Map(document.getElementById('map_wyczyn37'), optionsFeatPopup);
+  var map_wyczyn38 = new google.maps.Map(document.getElementById('map_wyczyn38'), optionsFeatPopup);
+  var map_wyczyn39 = new google.maps.Map(document.getElementById('map_wyczyn39'), optionsFeatPopup);
+  var map_wyczyn40 = new google.maps.Map(document.getElementById('map_wyczyn40'), optionsFeatPopup);
+  var map_wyczyn41 = new google.maps.Map(document.getElementById('map_wyczyn41'), optionsFeatPopup);
+  var map_wyczyn42 = new google.maps.Map(document.getElementById('map_wyczyn42'), optionsFeatPopup);
+  var map_wyczyn43 = new google.maps.Map(document.getElementById('map_wyczyn43'), optionsFeatPopup);
+  var map_wyczyn44 = new google.maps.Map(document.getElementById('map_wyczyn44'), optionsFeatPopup);
+  var map_wyczyn45 = new google.maps.Map(document.getElementById('map_wyczyn45'), optionsFeatPopup);
+  var map_wyczyn46 = new google.maps.Map(document.getElementById('map_wyczyn46'), optionsFeatPopup);
+  var map_wyczyn47 = new google.maps.Map(document.getElementById('map_wyczyn47'), optionsFeatPopup);
+  var map_wyczyn48 = new google.maps.Map(document.getElementById('map_wyczyn48'), optionsFeatPopup);
+  var map_wyczyn49 = new google.maps.Map(document.getElementById('map_wyczyn49'), optionsFeatPopup);
+  var map_wyczyn50 = new google.maps.Map(document.getElementById('map_wyczyn50'), optionsFeatPopup);
+  var map_wyczyn51 = new google.maps.Map(document.getElementById('map_wyczyn51'), optionsFeatPopup);
+  var map_wyczyn52 = new google.maps.Map(document.getElementById('map_wyczyn52'), optionsFeatPopup);
+  var map_wyczyn53 = new google.maps.Map(document.getElementById('map_wyczyn53'), optionsFeatPopup);
+  var map_wyczyn54 = new google.maps.Map(document.getElementById('map_wyczyn54'), optionsFeatPopup);
+  var map_wyczyn55 = new google.maps.Map(document.getElementById('map_wyczyn55'), optionsFeatPopup);
+  var map_wyczyn56 = new google.maps.Map(document.getElementById('map_wyczyn56'), optionsFeatPopup);
+  var map_wyczyn57 = new google.maps.Map(document.getElementById('map_wyczyn57'), optionsFeatPopup);
+  var map_wyczyn58 = new google.maps.Map(document.getElementById('map_wyczyn58'), optionsFeatPopup);
+  var map_wyczyn59 = new google.maps.Map(document.getElementById('map_wyczyn59'), optionsFeatPopup);
+  var map_wyczyn60 = new google.maps.Map(document.getElementById('map_wyczyn60'), optionsFeatPopup);
+  var map_wyczyn61 = new google.maps.Map(document.getElementById('map_wyczyn61'), optionsFeatPopup);
+  var map_wyczyn62 = new google.maps.Map(document.getElementById('map_wyczyn62'), optionsFeatPopup);
+  var map_wyczyn63 = new google.maps.Map(document.getElementById('map_wyczyn63'), optionsFeatPopup);
+  var map_wyczyn64 = new google.maps.Map(document.getElementById('map_wyczyn64'), optionsFeatPopup);
+  var map_wyczyn65 = new google.maps.Map(document.getElementById('map_wyczyn65'), optionsFeatPopup);
+  var map_wyczyn66 = new google.maps.Map(document.getElementById('map_wyczyn66'), optionsFeatPopup);
+  var map_wyczyn67 = new google.maps.Map(document.getElementById('map_wyczyn67'), optionsFeatPopup);
+  var map_wyczyn68 = new google.maps.Map(document.getElementById('map_wyczyn68'), optionsFeatPopup);
+  var map_wyczyn69 = new google.maps.Map(document.getElementById('map_wyczyn69'), optionsFeatPopup);
+  var map_wyczyn70 = new google.maps.Map(document.getElementById('map_wyczyn70'), optionsFeatPopup);
+  var map_wyczyn71 = new google.maps.Map(document.getElementById('map_wyczyn71'), optionsFeatPopup);
+  var map_wyczyn72 = new google.maps.Map(document.getElementById('map_wyczyn72'), optionsFeatPopup);
+  var map_wyczyn73 = new google.maps.Map(document.getElementById('map_wyczyn73'), optionsFeatPopup);
+  var map_wyczyn74 = new google.maps.Map(document.getElementById('map_wyczyn74'), optionsFeatPopup);
+  var map_wyczyn75 = new google.maps.Map(document.getElementById('map_wyczyn75'), optionsFeatPopup);
+  var map_wyczyn76 = new google.maps.Map(document.getElementById('map_wyczyn76'), optionsFeatPopup);
+  var map_wyczyn77 = new google.maps.Map(document.getElementById('map_wyczyn77'), optionsFeatPopup);
+  var map_wyczyn78 = new google.maps.Map(document.getElementById('map_wyczyn78'), optionsFeatPopup);
+  var map_wyczyn79 = new google.maps.Map(document.getElementById('map_wyczyn79'), optionsFeatPopup);
+  var map_wyczyn80 = new google.maps.Map(document.getElementById('map_wyczyn80'), optionsFeatPopup);
+  var map_wyczyn81 = new google.maps.Map(document.getElementById('map_wyczyn81'), optionsFeatPopup);
+  var map_wyczyn82 = new google.maps.Map(document.getElementById('map_wyczyn82'), optionsFeatPopup);
+  var map_wyczyn83 = new google.maps.Map(document.getElementById('map_wyczyn83'), optionsFeatPopup);
+  var map_wyczyn84 = new google.maps.Map(document.getElementById('map_wyczyn84'), optionsFeatPopup);
+  var map_wyczyn85 = new google.maps.Map(document.getElementById('map_wyczyn85'), optionsFeatPopup);
+  var map_wyczyn86 = new google.maps.Map(document.getElementById('map_wyczyn86'), optionsFeatPopup);
+  var map_wyczyn87 = new google.maps.Map(document.getElementById('map_wyczyn87'), optionsFeatPopup);
+  var map_wyczyn88 = new google.maps.Map(document.getElementById('map_wyczyn88'), optionsFeatPopup);
+  var map_wyczyn89 = new google.maps.Map(document.getElementById('map_wyczyn89'), optionsFeatPopup);
+  var map_wyczyn90 = new google.maps.Map(document.getElementById('map_wyczyn90'), optionsFeatPopup);
+  var map_wyczyn91 = new google.maps.Map(document.getElementById('map_wyczyn91'), optionsFeatPopup);
+  var map_wyczyn92 = new google.maps.Map(document.getElementById('map_wyczyn92'), optionsFeatPopup);
+  var map_wyczyn93 = new google.maps.Map(document.getElementById('map_wyczyn93'), optionsFeatPopup);
+  var map_wyczyn94 = new google.maps.Map(document.getElementById('map_wyczyn94'), optionsFeatPopup);
+  var map_wyczyn95 = new google.maps.Map(document.getElementById('map_wyczyn95'), optionsFeatPopup);
+  var map_wyczyn96 = new google.maps.Map(document.getElementById('map_wyczyn96'), optionsFeatPopup);
+  var map_wyczyn97 = new google.maps.Map(document.getElementById('map_wyczyn97'), optionsFeatPopup);
+
+  //Adding markers to main page - each marker has function to call out the pop-
+
+  // function addMarkerMainPage (props) {
+  //
+  //   var marker = new google.maps.Marker({position: props.coords, map: map,});
+  //
+  //   if (props.iconImage) {
+  //     marker.setIcon(props.iconImage);
+  //   }
+  //
+  //   google.maps.event.addListener(marker, "click", function () {
+  //     document.querySelector('.bg-modal').style.display = 'block';
+  //     document.querySelector('').style.display = 'block';
+  //     document.querySelector('').style.position = 'fixed';
+  //   });
+  // }
+  //
+  // function addMarkerPopup (props) {
+  //   var marker = new google.maps.Marker({position: props.coords, map: mapWyczyn});
+  //   if (props.iconImage) {
+  //     marker.setIcon(props.iconImage);
+  //   }
+  // }
 
   //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   //Markers for WYCZYN_1
@@ -305,7 +209,7 @@ function initMap() {
       document.querySelector('#wyczyn1_content').style.display = 'block';
       document.querySelector('#wyczyn1_content').style.position = 'fixed';
     });
-  };
+  }
   //Marker for pop-up
   addMarker_w1({
     coords: {lat: 51.1749981, lng: 20.749157},
@@ -318,7 +222,7 @@ function initMap() {
     if (props.iconImage) {
       marker.setIcon(props.iconImage);
     }
-  };
+  }
 
   //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

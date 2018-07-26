@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  /* Script to control wether the page is loaded or not */
+  /* Script to control whether the page is loaded or not */
   document.body.classList.add('js-loading');
 
   window.addEventListener("load", showPage);
@@ -12,7 +12,7 @@ $(document).ready(function () {
 
   /* For the sticky navigation */
   $('.js--section-video').waypoint(function (direction) {
-    if (direction == "down") {
+    if (direction === "down") {
       $('.js--sticky-nav').removeClass('invisible');
       $('.js--nav-button').removeClass('invisible');
 
@@ -1039,8 +1039,8 @@ $(document).ready(function () {
   /* Mobile navigation */
   $('.js--mobile-nav-icon').click(function () {
     var menu = $('.js--menu');
-    var hamburger = $('#js--hamburger');
-    var gobackarrow = $('#js--menu-go-back-arrow');
+    var hamburger = $('.js--hamburger');
+    var gobackarrow = $('.js--menu-go-back-arrow');
     var nav = $('.js--nav');
     var navbutton = $('.js--nav-button');
     var blacklogo = $('.js--black');
@@ -1052,7 +1052,7 @@ $(document).ready(function () {
       hamburger.addClass('not-exist');
       hamburger.removeClass('exist');
       gobackarrow.addClass('exist');
-      gobackarrow.removeClass('not-exist')
+      gobackarrow.removeClass('not-exist');
       /*nav.addClass('lake-color');
       nav.removeClass('sea-color');*/
       navbutton.addClass('visible');

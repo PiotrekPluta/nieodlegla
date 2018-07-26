@@ -253,7 +253,7 @@ nav {
     }
 }
 
-#js--hamburger{
+.js--hamburger{
     margin-top: -2px
 }
 
@@ -844,7 +844,7 @@ display: none;
 .section-map {
     background-color: #D4ECFF;
     position: relative;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 .sea {
@@ -1514,7 +1514,7 @@ footer .logo-space{
     width: 100%;	
     border-radius: 20px;
     background-color: #F1EFE9;
-    padding: 40px 0px 16px 0;
+    padding: 40px 0 16px 0;
 }
 
 @media only screen and (min-width: 1024px){
