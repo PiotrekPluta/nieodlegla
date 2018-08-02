@@ -1705,12 +1705,12 @@ footer .logo-space{
     color: #006977;
     text-decoration: underline;
 }
-.feat-short-instruction-illustation{
+.feat-short-instruction-illustration{
     display: none;
 }
 
 @media only screen and (min-width: 1024px){
-    .feat-short-instruction-illustation{
+    .feat-short-instruction-illustration{
         display: block;
         width: 140px;
         height: 140px;
