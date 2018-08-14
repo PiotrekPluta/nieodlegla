@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const buttonSuggest = document.querySelector('#btn-suggest');
   const featBox = document.querySelectorAll('.feat-box');
   const featsContent = document.querySelectorAll('.feat-content');
-  const jsMobileNavIcon = document.querySelector('.js--mobile-nav-icon');
+  const jsMobileNavIcons = document.querySelectorAll('.js--mobile-nav-icon');
 
   /* Showing button in menu on scrolling down*/
 
@@ -80,42 +80,40 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
 
   /* Mobile navigation */
+  jsMobileNavIcons.forEach(jsMobileNavIcon => {
+    jsMobileNavIcon.addEventListener('click', () => {
 
-  jsMobileNavIcon.addEventListener('click', () => {
+      const menu = $('.js--menu');
+      const hamburger = document.querySelector('.js--hamburger');
+      const goBackArrow = document.querySelector('.js--menu-go-back-arrow');
+      const background = document.querySelector('.js--menu-background');
 
-    const menu = document.querySelector('.js--menu');
-    const hamburger = document.querySelector('.js--hamburger');
-    const goBackArrow = document.querySelector('.js--menu-go-back-arrow');
-    const nav = document.querySelector('.js--nav');
-    const blacklogo = document.querySelector('.js--black');
-    const whitelogo = document.querySelector('.js--white');
-    const background = document.querySelector('.js--menu-background');
+      menu.slideToggle(10);
 
-    menu.slideToggle(10);
+      if (hamburger.classList.contains('exist')) {
 
-    if (hamburger.classList.contains('exist')) {
+        hamburger.classList.add('not-exist');
+        hamburger.classList.remove('exist');
+        goBackArrow.classList.add('exist');
+        goBackArrow.classList.remove('not-exist');
+        jsNavButton.classList.add('visible');
+        jsNavButton.classList.remove('invisible');
+        background.classList.add('exist');
+        background.classList.remove('not-exist');
 
-      hamburger.classList.add('not-exist');
-      hamburger.classList.remove('exist');
-      goBackArrow.classList.add('exist');
-      goBackArrow.classList.remove('not-exist');
-      jsNavButton.classList.add('visible');
-      jsNavButton.classList.remove('invisible');
-      background.classList.add('exist');
-      background.classList.remove('not-exist');
+      } else {
 
-    } else {
+        hamburger.classList.add('exist');
+        hamburger.classList.remove('not-exist');
+        goBackArrow.classList.add('not-exist');
+        goBackArrow.classList.remove('exist');
+        jsNavButton.classList.add('invisible');
+        jsNavButton.classList.remove('visible');
+        background.classList.add('not-exist');
+        background.classList.remove('exist');
 
-      hamburger.classList.add('exist');
-      hamburger.classList.remove('not-exist');
-      goBackArrow.classList.add('not-exist');
-      goBackArrow.classList.remove('exist')
-      jsNavButton.classList.add('invisible');
-      jsNavButton.classList.remove('visible');
-      background.classList.add('not-exist');
-      background.classList.remove('exist');
-
-    }
+      }
+    });
   });
 
   /*Function to open a pop-up that is shared in a link*/
